@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageButton
+            android:id="@+id/ImagBt_Fanhui_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wode_fanhui"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:textSize="20sp"
+            android:textColor="@color/colorHeise"
+            android:layout_gravity="center"
+            android:layout_marginLeft="140dp"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:src="@drawable/my_vip_empty"
+        android:id="@+id/imageView2"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="160dp"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="此权益为手机账户用户专享"
+        android:layout_gravity="center"
+        android:textColor="@color/colorHeise"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第三方一键登录不享受此权益"
+        android:layout_gravity="center"
+        android:textColor="@color/colorHeise"
+        />
+     <Button
+         android:layout_width="140dp"
+         android:layout_height="wrap_content"
+         android:text="前往手机登录"
+         android:layout_marginTop="20dp"
+         android:layout_gravity="center"
+         android:background="@drawable/wo_tuichu"
+         />
+</LinearLayout>

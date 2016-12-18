@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bwei.yunifang">
+   <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_title"
+        android:label="@string/app_name"
+        android:name=".view.activity.view.app"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <meta-data
+            android:name="wode"
+            android:value="5849404ba40fa33aae002054" >
+        </meta-data>
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+        <activity android:name=".view.activity.MainActivity"
+           >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                android:theme="@android:style/Theme.NoTitleBar"
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.activity.WelcomeActivity"
+            ></activity>
+        <activity android:name=".view.activity.HomePageActivity"></activity>
+        <activity android:name=".view.activity.GuideActivity"></activity>
+        <activity android:name=".view.activity.Wode_shezhi_Activity"></activity>
+        <activity android:name=".view.activity.Wode_yaoqin_Activity"></activity>
+        <activity android:name=".view.activity.Wode_Xianjin_Activity"></activity>
+
+        <activity android:name=".view.activity.Wode_log_Activity"></activity>
+        <activity android:name=".view.activity.Wode_zhuce_Activity"></activity>
+        <activity android:name=".view.activity.view.PersonInfo"></activity>
+        <activity android:name=".view.activity.SouyeshangpinActivity"></activity>
+        <activity android:name=".view.activity.SouYe_HuohuanActivity"></activity>
+        <activity android:name=".view.activity.Jifen_shangChen"></activity>
+        <activity android:name=".view.activity.view.SouYe_zhenweiActivity"></activity>
+        <activity android:name=".view.activity.Jifen_dixian"></activity>
+        <activity android:name=".view.activity.Souyegenduo_Activaty"></activity>
+        <activity android:name=".view.activity.ShuXingActivity"></activity>
+        <activity android:name=".view.activity.GongXiaoActivity"></activity>
+        <activity android:name=".view.activity.FuZhiActivity"></activity>
+
+      <activity android:name=".view.activity.DingDanActivity"></activity>
+
+    </application>
+</manifest>

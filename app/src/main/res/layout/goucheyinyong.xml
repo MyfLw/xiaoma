@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- 小对勾的布局 -->
+        <CheckBox
+            android:id="@+id/pro_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/pay"
+            android:button="@null"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+        <!-- 图片布局 -->
+        <ImageView
+            android:id="@+id/pro_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_title" />
+        <!-- 商品名称和价格的布局 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- 商品名称的布局 -->
+            <TextView
+                android:id="@+id/pro_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="连衣裙女夏季"
+                android:textColor="@color/colorHeise" />
+            <!-- 价格的布局 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp">
+
+                <TextView
+                    android:id="@+id/pro_shopPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="10dp"
+                    android:text="￥88"
+                    android:textColor="@color/colorCunhong"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/shop_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:text="数量：4"
+                    android:textColor="@color/bg_Gray" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_bianji"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="购买数量"/>
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/jian"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:text="-"
+            android:textColor="@color/bg_Gray"
+            android:background="@android:drawable/edit_text"/>
+        <TextView
+            android:id="@+id/num"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:text="1"
+            android:background="@android:drawable/edit_text"
+            android:gravity="center_vertical"/>
+        <Button
+            android:id="@+id/jia"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:text="+"
+            android:background="@android:drawable/edit_text"
+            android:textColor="@color/bg_Black"/>
+    </LinearLayout>
+</LinearLayout>

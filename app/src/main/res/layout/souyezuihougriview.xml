@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/check_update_background"
+            android:scaleType="centerCrop"
+            android:id="@+id/Shouyegriviewxiaotu"
+      android:layout_marginLeft="40dp"
+            />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/check_update_background"
+            android:scaleType="centerCrop"
+            android:id="@+id/Shouyegriview"
+            android:layout_alignParentTop="true"
+            android:layout_alignEnd="@+id/Shouyegriviewxiaotu" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Souyezuihouname"
+        android:text="镇店之宝丨美白嫩肤矿物蚕丝面膜7片"
+
+        android:layout_marginLeft="40dp"
+        />
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+      >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/Souyezuihouxianjia"
+          android:text="$ 39.0"
+          android:layout_marginLeft="50dp"
+          android:textColor="@color/brown"
+          />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="20dp"
+          android:id="@+id/Souyezuihouyuanjia"
+          android:text="$ 99"
+
+          />
+  </LinearLayout>
+
+</LinearLayout>

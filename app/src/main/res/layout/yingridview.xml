@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/check_update_background"
+            android:id="@+id/imaremen"
+              android:scaleType="centerCrop"
+            android:layout_alignParentTop="true"
+            android:layout_alignEnd="@+id/imagremenxiaomens" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/imagremenxiaomens"
+            android:scaleType="centerCrop"
+
+            android:src="@drawable/check_update_background"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/rementextview"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="hehehheh"
+        android:ellipsize="end"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/remenxianjin"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="SSGffffffff"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/remenyuanjia"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="SSGssssfff"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+</LinearLayout>

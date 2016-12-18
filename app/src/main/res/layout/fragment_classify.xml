@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/classify"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/edit_text"
+                android:drawableStart="@drawable/icon_search"
+                android:hint="  请输入商品名称"
+                android:textColorHint="@color/colorGray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp">
+
+                <ImageView
+                    android:id="@+id/mianmo"
+                    android:layout_width="130dp"
+                    android:layout_height="230dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/classify_facial_mask" />
+
+                <ImageView
+                    android:id="@+id/runfushui"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="140dp"
+                    android:src="@drawable/classify_emollient_water" />
+
+                <ImageView
+                    android:id="@+id/runfuru"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="250dp"
+                    android:src="@drawable/classify_body_lotion" />
+
+                <ImageView
+                    android:id="@+id/jiemianru"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="80dp"
+                    android:src="@drawable/classify_facial_cleanser" />
+
+                <ImageView
+                    android:id="@+id/other"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="250dp"
+                    android:layout_marginTop="80dp"
+                    android:src="@drawable/classify_other" />
+
+                <ImageView
+                    android:id="@+id/taozhuan"
+                    android:layout_width="210dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="160dp"
+                    android:src="@drawable/classify_kit" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="- 按功效 -"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="美丽从选择产品开始"
+                    android:textColor="@color/colorGray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/bushui"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/classify_hydrating" />
+
+                    <ImageView
+                        android:id="@+id/shuhuan"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:src="@drawable/classify_soothing" />
+
+                    <ImageView
+                        android:id="@+id/konyou"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:src="@drawable/classify_control_oil" />
+
+                    <ImageView
+                        android:id="@+id/meibai"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:src="@drawable/classify_whitening" />
+
+                    <ImageView
+                        android:id="@+id/jinzhi"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:src="@drawable/classify_firming" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="- 按肤质 -"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="适合自己的才是最好的"
+                        android:textColor="@color/colorGray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <Button
+                            android:id="@+id/gride_wenhe"
+                            android:layout_width="175dp"
+                            android:layout_height="100dp"
+                            android:background="#7FCF46"
+                            android:gravity="center"
+                            android:text="#温和性肤质#"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="20sp" />
+
+                        <Button
+                            android:id="@+id/gride_zhongx"
+                            android:layout_width="175dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="#FFF0A6"
+                            android:gravity="center"
+                            android:text="#中性肤质#"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <Button
+                            android:id="@+id/gride_ganxing"
+                            android:layout_width="175dp"
+                            android:layout_height="100dp"
+                            android:background="#C9A272"
+                            android:gravity="center"
+                            android:text="#干性肤质#"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="20sp" />
+
+                        <Button
+                            android:id="@+id/gride_youxing"
+                            android:layout_width="175dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="#AD8BC0"
+                            android:gravity="center"
+                            android:text="#油性肤质#"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <Button
+                            android:id="@+id/gride_doudou"
+                            android:layout_width="175dp"
+                            android:layout_height="100dp"
+                            android:background="#4B9AEE"
+                            android:gravity="center"
+                            android:text="#痘痘肤质#"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="20sp" />
+
+                        <Button
+                            android:id="@+id/gride_mingan"
+                            android:layout_width="175dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="#FF9F7A"
+                            android:gravity="center"
+                            android:text="#敏感肤质#"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/classify_triangle"
+                        android:gravity="center"
+                        android:text="- 明星产品 -"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <GridView
+                        android:id="@+id/star"
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"
+                        android:numColumns="2"></GridView>
+
+                    <TextView
+                        android:id="@+id/Fenleichakansuosou"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#77E5E5E5"
+                        android:gravity="center"
+                        android:text="查看所有商品"
+                        android:textColor="@color/colorGray" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+</LinearLayout>

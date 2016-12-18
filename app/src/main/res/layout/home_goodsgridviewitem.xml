@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+      android:gravity="center"
+    android:background="@drawable/classify_facial_cleanser">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_dibutu"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+             />
+        <ImageView
+            android:id="@+id/iv_zuoshang"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="100dp"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:textColor="#000000"
+        android:id="@+id/tv_goodstitle"
+        android:textSize="16sp"
+        android:text="dddddd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_jianjie"
+        android:textSize="14sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="dddddd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+           android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/tv_xianjia"
+              android:layout_marginLeft="20dp"
+            android:text="dd"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+
+            android:gravity="center"
+            android:id="@+id/tv_yuanjia"
+            android:layout_marginLeft="50dp"
+            android:text="dd"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>
